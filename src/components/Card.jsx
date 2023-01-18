@@ -28,9 +28,9 @@ function Card({ Data }) {
                     <img className='rounded-5 card-img' src={userImg} alt="" />
                 </span>
             <div className="card-body">
-                <h5 className="card-title fs-6 fw-semibold shadow-sm py-2">Name: {name}</h5>
-                <p className="card-text fs-6 mb-2 fw-semibold shadow-sm py-2">Mob: {Mob}</p>
-                <p className="card-text fs-6 mb-2 shadow-sm py-2 ">Type: {isType}</p>
+                <h5 className="card-text  fw-semibold shadow-sm py-2">Name: {name}</h5>
+                <p className="card-text  mb-2 fw-semibold shadow-sm py-2">Mob: {Mob}</p>
+                <p className="card-text  mb-2 shadow-sm py-2 ">Type: {isType}</p>
             </div>
             <div className="card-right d-flex align-items-center justify-content-between flex-column">
                 <button className="btn btn-sm btn-success m-1" onClick={() => { handleEdit(Data) }}> <Link to={"/form"}> <i class="bi bi-pencil-square"></i></Link></button>

@@ -74,4 +74,8 @@ nav {}
   .card-main{
     width: 100%;
   }
+  .card-img{
+    width: 40px;
+  }
+
 }
