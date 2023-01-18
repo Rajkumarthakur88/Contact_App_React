@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card {
+  width: 18rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dropdownSelect {
+  padding: 8px 4px;
+  background-color: rgb(243, 237, 237);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+a {
+  color: rgb(244, 242, 239);
+}
+
+a:hover {
+  color: white;
+}
+
+nav {}
+
+.form-container {
+  -webkit-box-shadow: 1px -1px 6px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px -1px 6px -1px rgba(0,0,0,0.75);
+  box-shadow: 1px -1px 6px -1px rgba(0,0,0,0.75);
+}
+.mobile-btn{
+  display: none;
+}
+.no-contact-h1{
+  font-size: 45px;
+  font-weight: 500;
+  position: absolute;
+  margin: 430px 0;
+}
+.no-contact-img{
+  width: 50%;
+  height: 40%;
+}
+.card-main{
+  width: 60%;
+}
+.card-img{
+  width: 70px;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width:768px) {
+ 
+.no-contact-img{
+  width: 100%;
+  height: 100%;
+}
+
+.no-contact-h1{
+  margin: 250px 0;
+}
+.card-main{
+  width: 75%;
+}
+}
+
+@media (max-width:600px) {
+  .nav-right {
+    display: none !important;
+  }
+  .mobile-btn{
+    display: block;
+  }
+  .no-contact-h1{
+    margin: 250px 0;
+  }
+  .card-main{
+    width: 100%;
+  }
 }
