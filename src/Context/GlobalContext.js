@@ -6,8 +6,8 @@ const GlobalContext = createContext()
 export const GlobalProvider = ({ children }) => {
 
     const initialState = {
-        Data:  [],
-        // localStorage.getItem("Data") ? JSON.parse(localStorage.getItem("Data")) :
+        Data: localStorage.getItem("Data") ? JSON.parse(localStorage.getItem("Data")) :[],
+        // 
         Edit: {
             MyContact:{},
             isEdit: false

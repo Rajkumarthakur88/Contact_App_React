@@ -14,7 +14,7 @@ function Form() {
 
 
     useEffect(() => {
-        // localStorage.setItem("Data", JSON.stringify(Data))
+        localStorage.setItem("Data", JSON.stringify(Data))
         setInputData(Edit.MyContact.name)
         setInputData2(Edit.MyContact.Mob)
     }, [Data, Edit])
@@ -73,7 +73,7 @@ function Form() {
                         </label>
                         <input
                             className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none "
-                            id="number" type="number" required placeholder="0123456789" value={inputData2} onChange={(e) => setInputData2(e.target.value)} />
+                            id="tel" type="number" required placeholder="0123456789" value={inputData2} onChange={(e) => setInputData2(e.target.value)} />
                         <p className="text-blue-500 text-xs italic">Please Enter Mobile Number.</p>
                     </div>
 
