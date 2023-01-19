@@ -2,6 +2,7 @@ import Reac, { useContext, useEffect } from 'react'
 import Cards from '../components/Cards'
 import { Link, useNavigate } from 'react-router-dom'
 import GlobalContext from '../Context/GlobalContext'
+import SearchBox from '../components/SearchBox'
 
 function Home() {
 
@@ -17,7 +18,7 @@ function Home() {
 
     return (
         <div className='container'>
-
+            <SearchBox />
             <div className="container d-flex align-items-center justify-content-center flex-column mt-5">
 
                 <button className='btn btn-lg btn-success mt-3'>  <Link to={"/form"} >Create New Contact</Link></button>

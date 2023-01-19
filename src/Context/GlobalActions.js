@@ -24,3 +24,6 @@ export const UpdateContact = (id, name, Mob, isType) => {
 export const FilterContact = (value) => {
     return value
 }
+export const SearchContact = (value) => {
+    return value
+}

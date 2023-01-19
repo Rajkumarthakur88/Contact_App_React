@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 function Cards() {
 
-    const { Data, Filter } = useContext(GlobalContext)
+    const { Data, Filter,Search } = useContext(GlobalContext)
 
     // if (Data===null) {
     //     return <div className="container d-flex flex-wrap align-items-center justify-content-center flex-column mt-5">
@@ -30,7 +30,11 @@ function Cards() {
                 <h1 className='home-h1 fs-2 px-5 py-2 mt-5 text-white rounded-1' style={{ background: "#6a30ff" }}>Your Contacts</h1>
                 <Fil />
 
-                {Filter.length >= 1 ?
+                {Search.length >= 1 ?
+
+                    Search.map(item => <Card Data={item} key={item.id} />)
+                    :
+                    Filter.length >= 1 ?
 
                     Filter.map(item => <Card Data={item} key={item.id} />)
                     :

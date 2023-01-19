@@ -11,7 +11,7 @@ const GlobalReducer = (state, action) => {
                 ...state,
                 Data: state.Data.filter(item => item.id !== action.payload)
             }
-            
+
         case "EDIT_CONTACT":
             return {
                 ...state,
@@ -26,8 +26,14 @@ const GlobalReducer = (state, action) => {
             }
         case "FILTER_CONTACT":
             return {
-            ...state,
-                Filter:state.Data.filter(item => item.isType === action.payload)
+                ...state,
+                Filter: state.Data.filter(item => item.isType === action.payload)
+            }
+        case "SEARCH_CONTACT":
+            console.log(action.payload)
+            return {
+                ...state,
+                Search: state.Data.filter(item => item.name == action.payload)
             }
 
         default:

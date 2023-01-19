@@ -43,6 +43,9 @@ nav {}
 .card-img{
   width: 70px;
 }
+.search-input{
+  width: 30%;
+}
 
 /* MOBILE VIEW */
 
@@ -77,5 +80,7 @@ nav {}
   .card-img{
     width: 40px;
   }
-
+.search-input{
+  width: 100%;
+}
 }
