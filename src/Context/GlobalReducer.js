@@ -33,7 +33,7 @@ const GlobalReducer = (state, action) => {
             console.log(action.payload)
             return {
                 ...state,
-                Search: state.Data.filter(item => item.name == action.payload)
+                Search: state.Data.filter(item => item.name.includes(action.payload))
             }
 
         default:
